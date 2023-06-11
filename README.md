@@ -4,6 +4,7 @@ https://kashumy.github.io/Project-1/
 ______
 
 
+## od 11.czerwca przez 2dni nie pracuje nad tym projektem puki nie napiszesz mi tego :P
 
 
 

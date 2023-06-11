@@ -1,5 +1,7 @@
 ![](ikona.ico) testuj link
-______ https://kashumy.github.io/Project-1/ ______
+______
+https://kashumy.github.io/Project-1/ 
+______
 
 - dodano nowe style 11.czerwca 2023r.
 

@@ -3,8 +3,6 @@ ______
 https://kashumy.github.io/Project-1/ 
 ______
 
-- dodano nowe style 11.czerwca 2023r.
-
 
 
 
@@ -31,6 +29,15 @@ _____________
 
 _____________
 
+
+# Chat
+/ -kashumy.github
+\ -codinger-cutie
+
+_____________
+/Jesteś w stanie edytować readme ?
+
+_____________
 
 
 

@@ -1,50 +1,166 @@
 <!DOCTYPE html>
 
 <html>
-
+<!--Main() styles-->
+<style>
+	body{
+		background :black ;
+	}
+	*{
+		margin :0;
+		padding :0;
+	}
+</style>
 <head>
 
-	<meta charset="UTF-8">	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="/ikona.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=7">
+<!--Konfiguracja SEO -->
+<!--Wymyśl nazwę nie mam pomysłu :/  
+wpisz ją w content=""-->
 
-	<!-- @codinger-cutie (styles for gradient text in page (testing) ) 10.06.2023 -->
-	<style>
-		#codinger-cutie-testing {
-			
-  font-size: 80px;
-  -webkit-text-stroke: 1px black; 
-			<!-- gradient from cssgradient.io -->
-			background: rgb(63,94,251);
-background: linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
-			
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  font-weight: bold;
-  font-family: 'Courier New', monospace;
-  letter-spacing: 10px;
-}
-	</style>
-	<!-- end @codinger-cutie -->
-	
-	<title></title>
-	
-	
+  <!--  <meta name="keywords" content="">  -->
+      <meta name="author" content="Jaś (codinger-cutie.github) , Krystian (Kashumy.github)">
+    <meta name="description" content="Wspulna strona kolaboracja">
+
+
+
+
+
+
+	<title> Wspułpraca z @codinger-cutie </title>
+
+
 
 </head>
 
 <body>
-<pre style="white-space:pre-wrap;">
+	<pre style="white-space:pre-wrap;">
 
-  @codinger-cutie 
-  jeżeli jesteś w stanie edytować ten plik 
-  to napisz coś tu taj
-  
-  /
-  <!-- @codinger-cutie gradient text 10.06.2023--> 
-  <p class="coodinger-cutie-testing">Testing collaboration</p>
-  <p class="coodinger-cutie-testing">by codinger-cutie</p>
 
-     Taki test
+
+
+	</pre>
+<!--Kashumy.github added this-->
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button class="button" id="bar1" onclick="showwin()" >Show window</button>
+
+<br>
+<br>
+<br>
+
+
+
+<!--end Kashumy.github -->
+	<br>
+	<br>
+	<br>
+	<br>
+	  <!-- @codinger-cutie gradient text 10.06.2023-->
+	  <p class="coodinger-cutie-testing">Testing collaboration</p>
+	  <p class="coodinger-cutie-testing">by codinger-cutie</p>
+<br>
+<br>
+<br>
+<br>
+
 </body>
 
 </html>
+	<!-- @codinger-cutie (styles for gradient text in page (testing) ) 10.06.2023 -->
+				<!-- gradient from cssgradient.io -->
+				
+				<!--@Kashumy bug fix .codinger-cutie-testing to .coodinger-cutie-testing 
+				
+				Nice gradient ;)
+				i added shadow
+				and letter-spacing not 10px now 5px
+				
+				-->
+	<style>
+	#bar1{
+		position :fixed ;
+		top:10px;
+		right :10px;
+	}
+		.coodinger-cutie-testing {
+
+			font-size: 20px;
+			-webkit-text-stroke: 0.1px black;
+      background: rgb(63, 94, 251);
+			background: linear-gradient(90deg, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+			text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
+
+			background-clip: text;
+			-webkit-background-clip: text;
+			color: transparent;
+			font-weight: bold;
+			font-family: 'Courier New', monospace;
+			letter-spacing: 5px;
+		}
+		.coodinger-cutie-testing::after {
+			content: " ::After - added by Kashumy.github ";
+			
+						-webkit-text-stroke: 0.1px black;
+						background: rgb(63, 94, 251);
+						background: linear-gradient(90deg, rgba(63, 251, 107, 1) 0%, rgba(63, 94, 251, 1) 100%);
+									-webkit-background-clip: text;
+									color: transparent;
+						
+		}
+	</style>
+	<!-- end @codinger-cutie -->
+	<!--  @KashumyGithub (Styles for better page (alpha) ) 11.06.2023 -->
+	<style>
+
+				.button {
+					display: inline-block;
+					padding: 12px 24px;
+					border-radius: 25px;
+					background-color: #4CAF50;
+					color: white;
+					text-align: center;
+					font-size: 16px;
+					box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+					transition: all 0.3s ease 0s;
+					
+					outline: none;
+					border: none;
+				}
+		
+				.button:hover {
+					transform: translateY(-5px);
+					box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.2);
+					background-color: #3e8e41;
+				}
+		
+				.button:active {
+					transform: translateY(2px);
+					box-shadow: none;
+					background-color: #1e8449;
+				}
+	</style>
+<!-- My favourite window with inline style by Kashumy.github no copyright © cosmos licence-->
+
+     <div id="win1" style="margin-left: 10vw;margin-top:10vh;   position:absolute;z-index:8; top:0;left:0;height:80vh;width:80vw;background :rgba(20,20,20,1) ;color:rgba(200,200,200,1)  ;font-size:94%; display :none ;" ><div style="padding: 20px;color:white ;background :rgba(50,50,50,1) ;" >Type in pre your concepts to this project <p onclick="hidewin1()" style="color:red; position :absolute ; right :10px; top:3.5%;" >x</p> </div>
+     <pre style="white-space:pre-wrap; margin:15px; " ><ul><li>   Kashumy github concept pl( zrubmy tutaj kogiel mogiel  z najlepszymi stylami css swiata )</li>
+     <li> zrobię dla tego projektu osobne konto xd</li>
+     <li>    Wpisz tutaj swój koncept</li>
+     	   </ul>
+     </pre>
+     
+     </div>
+     
+     <!--script-->
+<script>
+	
+function showwin(){
+	document.getElementById("win1").style.display ="block";
+}
+function hidewin1(){
+document.getElementById("win1").style.display ="none";
+}
+</script>

@@ -36,8 +36,8 @@ _____________
 \ -codinger-cutie
 
 _____________
-/Jesteś w stanie edytować readme ?
-/Tak, ponieważ zrobiłem tekst z gradientem
+/Jesteś w stanie edytować readme ?  
+\Tak, ponieważ zrobiłem tekst z gradientem
 _____________
 
 

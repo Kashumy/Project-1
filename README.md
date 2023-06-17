@@ -38,6 +38,7 @@ _____________
 _____________
 /Jesteś w stanie edytować readme ?  
 \Tak, ponieważ zrobiłem tekst z gradientem
+/ ... ok 
 _____________
 
 

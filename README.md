@@ -1,4 +1,4 @@
-![](ikona.ico) testuj link
+ testuj link
 ______
 https://kashumy.github.io/Project-1/ 
 ______

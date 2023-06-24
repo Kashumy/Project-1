@@ -36,11 +36,16 @@ _____________
 \ -codinger-cutie
 
 _____________
-/Jesteś w stanie edytować readme ?  
+/Jesteś w stanie edytować readme ?
 \Tak, ponieważ zrobiłem tekst z gradientem
 / ... ok 
 / na dziś kończę 17 czerwiec 
-/ pa !
+/ pa !  
+\ 24 czerwiec 2023  
+\ co mam Ci tutaj napisać?  
+\ Po co zrobiłeś pull request do [codinger-cutie/repo-renaming-help](https://github.com/codinger-cutie/repo-renaming-help)  
+\ Aby oddzielić linie od siebie wstaw dwie spacje na końcu tekstu daj Enter i coś napisz  
+\ O tak
 _____________
 
 

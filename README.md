@@ -47,6 +47,7 @@ _____________
 \ Aby oddzielić linie od siebie wstaw dwie spacje na końcu tekstu daj Enter i coś napisz  
 \ O tak
 / ..?
+/ nie pytaj poco ten pull request xd lol
 _____________
 
 

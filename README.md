@@ -46,6 +46,7 @@ _____________
 \ Po co zrobiłeś pull request do [codinger-cutie/repo-renaming-help](https://github.com/codinger-cutie/repo-renaming-help)  
 \ Aby oddzielić linie od siebie wstaw dwie spacje na końcu tekstu daj Enter i coś napisz  
 \ O tak
+/ ..?
 _____________
 
 

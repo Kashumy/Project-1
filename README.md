@@ -47,7 +47,13 @@ _____________
 \ Aby oddzielić linie od siebie wstaw dwie spacje na końcu tekstu daj Enter i coś napisz  
 \ O tak
 / ..?
-/ nie pytaj poco ten pull request xd lol
+/ nie pytaj poco ten pull request xd lol  
+\ nie no xd czemu usunąłeś mi moją wiadomość zobaczę czy usuniesz tę tutaj: 
+\ to screenshot z Brave Browser to taki Chrome z wbudowanym adblockerem  
+\ xd co to za dziwna nawigacja na nowym GitHubie napisz który przycisk gdzie prowadzi xd:  
+<img src="https://github.com/codinger-cutie/img-host/blob/main/tvlgt.jpg" width="50%">  
+\ dlaczego nie dajesz dwóch spacji na końcu swojej wiadomości a potem Enter jak ja  
+\ gdy to zrobisz wiadomości nie bedą wyświetlane w jednej linii
 _____________
 
 

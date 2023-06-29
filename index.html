@@ -348,6 +348,12 @@ document.addEventListener("keyup", e => {
   down = 0;
 });
   
-  
+
+<!-- prevent pull to refresh etc. on tiled-map @codinger-cutie -->
+ document.querySelector('#tiled-map-board').addEventListener("touchmove", e => {
+    e.preventDefault();
+  });
+<!-- end -->
+	
 </script>
 <!-- end @codinger-cutie -->

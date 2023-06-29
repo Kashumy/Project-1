@@ -53,7 +53,7 @@ _____________
 \ xd co to za dziwna nawigacja na nowym GitHubie napisz który przycisk gdzie prowadzi xd:  
 <img src="https://github.com/codinger-cutie/img-host/blob/main/tvlgt.jpg" width="50%">  
 \ dlaczego nie dajesz dwóch spacji na końcu swojej wiadomości a potem Enter jak ja  
-\ gdy to zrobisz wiadomości nie bedą wyświetlane w jednej linii
+\ gdy to zrobisz wiadomości nie bedą wyświetlane w jednej linii  
 \ <input type="color"> i pełny ekran: [code snippet](https://gist.github.com/codinger-cutie/784eaf8d069d45c692fe66d957fde0bb)  
 _____________
 

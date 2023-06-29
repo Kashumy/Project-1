@@ -63,6 +63,30 @@ wpisz ją w content=""-->
 <!--Kashumy.github added this-->
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button class="button" id="bar1" onclick="showwin()" >Show window</button>
 <div class="board">
+	<!-- Added tiled map and d-pad by @codinger-cutie -->
+  
+  <div id="tiled-map-board" style="overflow: hidden; height: 100%;">
+  <div id="map-container">
+    <div id="map"></div>
+  </div>
+    
+  </div>
+  
+    <div id="mobile-dpad" style="width: 90px; height: 90px; background-color: blue; position: absolute; left: 2.5%; bottom: 5%;">
+	    <!-- jak chcesz d-pad po prawej ustaw left na 75.5% -->
+	    <!-- d-pad po lewej ustaw left na 2.5% -->
+    <div style="width: 30px; height: 30px; display: hidden; float: left;"></div>
+    <button id="move-up" style="width: 30px; height: 30px; float: left; user-select: none;">&uarr;</button>
+    <div style="width: 30px; height: 30px; display: hidden; float: left;"></div>
+    <button id="move-left" style="width: 30px; height: 30px; float: left; user-select: none;">&larr;</button>
+    <div style="width: 30px; height: 30px; display: hidden; float: left;"></div>
+    <button id="move-right" style="width: 30px; height: 30px; float: left; user-select: none;">&rarr;</button>
+    <div style="width: 30px; height: 30px; display: hidden; float: left;"></div>
+    <button id="move-down" style="width: 30px; height: 30px; float: left; user-select: none;">&darr;</button>
+  
+  
+</div>
+  <!-- end @codinger-cutie -->
   
 </div>
 <!--end Kashumy.github -->
@@ -148,6 +172,7 @@ wpisz ją w content=""-->
      <div id="win1" style="margin-left: 10vw;margin-top:10vh;   position:absolute;z-index:8; top:0;left:0;height:80vh;width:80vw;background :rgba(20,20,20,1) ;color:rgba(200,200,200,1)  ;font-size:94%; display :none ; overflow :hidden ; overflow :scroll ;" ><div style="padding: 20px;color:white ;background :rgba(50,50,50,1) ;" >Type in pre your concepts to this project <p onclick="hidewin1()" style="color:red; position :absolute ; right :10px; top:3.5%;" >x</p> </div>
      <pre style="white-space:pre-wrap; margin:15px; " ><ul><li>   Kashumy github concept pl( zrubmy tutaj kogiel mogiel  z najlepszymi stylami css swiata )</li>
      <li> Tam w tym Zielonym Prostokącie zrobimy mape kafelkowa</li>
+	     <li>@codinger-cutie w Zielonym Prostokącie zrobiłem mapę kafelkową (taka sama jak na moim GitHubie) ze sterowaniem komputerowym (strzałki) i mobilnym (d-pad)</li>
      <li>    Wpisz tutaj swój koncept</li>
      	   </ul>
      	   
@@ -168,3 +193,161 @@ function hidewin1(){
 document.getElementById("win1").style.display ="none";
 }
 </script>
+
+
+
+<!-- Added @codinger-cutie tile-map script -->
+<script>
+  
+  
+  const mapContainer = document.querySelector('#map-container');
+
+const tiledMap = document.querySelector('#map');
+
+mapContainer.style.width = '100vw';
+mapContainer.style.height = '1200px';
+mapContainer.style.border = '2px solid #000';
+mapContainer.style.overflow = 'hidden';
+
+let tileWidth = 34, tileHeight = 34;
+
+tiledMap.style.width = tileWidth * 20 + 'px';
+tiledMap.style.height = tileHeight * 20 + 'px';
+// szerokość i wysokość mapy to 20x20
+let totalTiles = 400;
+
+var map = [
+  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+]
+
+map = [""];
+
+for (i=0; i<400-1; i++)
+  {
+map.push(Math.round(Math.random() ));
+    console.log(map);
+  }
+console.log(map.length);
+
+for (i=0; i<map.length; i++)
+  {
+    if (map[i] == 1) {
+      let newTile = document.createElement("div");
+      newTile.style.width = tileWidth- 4 + 'px';
+      newTile.style.height = tileWidth - 4 + 'px';
+      newTile.style.backgroundColor = 'blue';
+      newTile.style.border = '2px solid red';
+      newTile.style.float = 'left';
+      newTile.classList.add("tile");
+      tiledMap.appendChild(newTile);
+    } else if (map[i] == 0) {
+      let newTile = document.createElement("div");
+      newTile.style.width = tileWidth - 4 + 'px';
+      newTile.style.height = tileHeight - 4 + 'px';
+      newTile.style.backgroundColor = 'blue';
+      newTile.style.border = '2px solid blue';
+      newTile.style.opacity = '0.1';
+      newTile.style.float = 'left';
+      newTile.classList.add("tile");
+      tiledMap.appendChild(newTile);
+    }
+    
+  }
+
+let left = 0, right = 0, up = 0, down = 0;
+
+const moveLeft = document.querySelector('#move-left');
+const moveRight = document.querySelector('#move-right');
+const moveUp = document.querySelector('#move-up');
+const moveDown = document.querySelector('#move-down');
+
+moveLeft.addEventListener("touchstart", e => {
+  console.log(e);
+  left = 1;
+});
+moveLeft.addEventListener("touchend", e => {
+  console.log(e);
+  left = 0;
+});
+
+
+moveRight.addEventListener("touchstart", e => {
+  console.log(e);
+  right = 1;
+});
+moveRight.addEventListener("touchend", e => {
+  console.log(e);
+  right = 0;
+});
+
+
+moveUp.addEventListener("touchstart", e => {
+  console.log(e);
+  up = 1;
+});
+moveUp.addEventListener("touchend", e => {
+  console.log(e);
+  up = 0;
+});
+
+
+moveDown.addEventListener("touchstart", e => {
+  console.log(e);
+  down = 1;
+});
+moveDown.addEventListener("touchend", e => {
+  console.log(e);
+  down = 0;
+});
+
+let posX = 0, posY = 0;
+setInterval(cameraMove, 10);
+function cameraMove() {
+  if (left == 1) {
+    tiledMap.style.transform += 'translateX(' + 1 + 'px)';
+    posX++;
+  }
+  if (right == 1) {
+    tiledMap.style.transform += 'translateX(' + -1 + 'px)';
+    posX--;
+  }
+  if (up == 1) {
+    tiledMap.style.transform += 'translateY(' + 1 + 'px)';
+    posY++;
+  }
+  if (down == 1) {
+    tiledMap.style.transform += 'translateY(' + -1 + 'px)';
+    posY--;
+  }
+
+}
+
+document.addEventListener("keydown", e => {
+  console.log(e.keyCode);
+  if (e.keyCode == "37") {
+    left = 1;
+  } else {left = 0;}
+  if (e.keyCode == "39") {
+    right = 1;
+  } else {right = 0;}
+  if (e.keyCode == "38") {
+    up = 1;
+  } else {up = 0;}
+  if (e.keyCode == "40") {
+    down = 1;
+  } else {down = 0;}
+  
+});
+
+document.addEventListener("keyup", e => {
+  left = 0;
+  right = 0;
+  up = 0;
+  down = 0;
+});
+  
+  
+</script>
+<!-- end @codinger-cutie -->

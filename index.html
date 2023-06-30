@@ -69,12 +69,11 @@ wpisz ją w content=""-->
   <div id="map-container">
     <div id="map"></div>
   </div>
-    
-  </div>
-  
+
+    <!-- Moved d-pad into tiled-map-board @codinger-cutie -->
     <div id="mobile-dpad" style="width: 90px; height: 90px; background-color: blue; position: absolute; left: 2.5%; bottom: 5%;">
-	    <!-- jak chcesz d-pad po prawej ustaw left na 75.5% -->
-	    <!-- d-pad po lewej ustaw left na 2.5% -->
+    <!-- jak chcesz d-pad po prawej ustaw left na 75.5% -->
+    <!-- d-pad po lewej ustaw left na 2.5% -->
     <div style="width: 30px; height: 30px; display: hidden; float: left;"></div>
     <button id="move-up" style="width: 30px; height: 30px; float: left; user-select: none;">&uarr;</button>
     <div style="width: 30px; height: 30px; display: hidden; float: left;"></div>
@@ -86,7 +85,12 @@ wpisz ją w content=""-->
   
   
 </div>
-  <!-- end @codinger-cutie -->
+  <!-- end (d-pad) @codinger-cutie -->
+    
+  </div>
+<!-- end (tiled-map) @codinger-cutie -->
+  
+    
   
 </div>
 <!--end Kashumy.github -->
@@ -349,11 +353,17 @@ document.addEventListener("keyup", e => {
 });
   
 
-<!-- prevent pull to refresh etc. on tiled-map @codinger-cutie -->
+ // prevent pull to refresh etc. on tiled-map @codinger-cutie
  document.querySelector('#tiled-map-board').addEventListener("touchmove", e => {
     e.preventDefault();
   });
-<!-- end -->
+// end @codinger-cutie
+
+// added fullscreen for tile-map @codinger-cutie
+document.querySelector('#tiled-map-board').addEventListener("click", e => {
+    document.body.requestFullscreen();
+  });
+// end (fullscreen) @codinger-cutie
 	
 </script>
 <!-- end @codinger-cutie -->

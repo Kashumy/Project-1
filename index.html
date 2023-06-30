@@ -177,6 +177,7 @@ wpisz ją w content=""-->
      <pre style="white-space:pre-wrap; margin:15px; " ><ul><li>   Kashumy github concept pl( zrubmy tutaj kogiel mogiel  z najlepszymi stylami css swiata )</li>
      <li> Tam w tym Zielonym Prostokącie zrobimy mape kafelkowa</li>
 	     <li>@codinger-cutie w Zielonym Prostokącie zrobiłem mapę kafelkową (taka sama jak na moim GitHubie) ze sterowaniem komputerowym (strzałki) i mobilnym (d-pad)</li>
+	     <li>@codinger-cutie sterowanie mobilne jest wyłączone na urządzeniach bez ekranu dotykowego</li>
      <li>    Wpisz tutaj swój koncept</li>
      	   </ul>
      	   
@@ -360,9 +361,14 @@ document.addEventListener("keyup", e => {
 // end @codinger-cutie
 
 // added fullscreen for tile-map @codinger-cutie
+if (navigator.maxTouchPoints > 0 {
 document.querySelector('#tiled-map-board').addEventListener("click", e => {
     document.body.requestFullscreen();
   });
+} else {
+    document.querySelector('#mobile-dpad').remove();
+    // remove d-pad on non-touch screen devices
+}
 // end (fullscreen) @codinger-cutie
 	
 </script>

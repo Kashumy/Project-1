@@ -55,6 +55,7 @@ _____________
 \ dlaczego nie dajesz dwóch spacji na końcu swojej wiadomości a potem Enter jak ja  
 \ gdy to zrobisz wiadomości nie bedą wyświetlane w jednej linii  
 \ &lt;input type="color"&gt; i pełny ekran: [code snippet](https://gist.github.com/codinger-cutie/784eaf8d069d45c692fe66d957fde0bb)  
+\ dziwna liczba repo Kashumy 08.07.2023 
 _____________
 
 

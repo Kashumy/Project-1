@@ -355,14 +355,14 @@ document.addEventListener("keyup", e => {
   
 
  // prevent pull to refresh etc. on tiled-map @codinger-cutie
- document.querySelector('#tiled-map-board').addEventListener("touchmove", e => {
+ document.querySelector('#tiled-map-board').addEventListener("touchstart", e => {
     e.preventDefault();
   });
 // end @codinger-cutie
 
 // added fullscreen for tile-map @codinger-cutie
 if (navigator.maxTouchPoints > 0) {
-document.querySelector('#tiled-map-board').addEventListener("click", e => {
+document.querySelector('#tiled-map-board').addEventListener("touchstart", e => {
     document.body.requestFullscreen();
   });
 } else {
